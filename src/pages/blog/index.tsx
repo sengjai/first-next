@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 
-export default function About() {
+export default function Blog() {
     return (
     <>
-        <h1>Welcome to About</h1>
-        <p>Lorem ipsum, welcome to about page</p>
+        <h1>This is the blog</h1>
+        <p>Wohoo</p>
         <Link href="/">Back to index</Link>
     </>
     
