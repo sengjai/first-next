@@ -5,7 +5,7 @@ export default function Blog(props) {
     <>
       <h2>The Blog</h2>
       {props.posts.map((post, index) => {
-        return (
+        return (  
           <div key={index}>
             <h3>
               <Link href={`/blog/${post.slug}`}>{post.title}</Link>
@@ -25,7 +25,9 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: data.posts
+      posts: data.posts,
+      skyColor: "Blue",
+      grassColor: "Green"
     }
   }
 }
