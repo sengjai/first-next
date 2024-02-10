@@ -1,10 +1,10 @@
 import Link from "next/link"
 
-export default function Blog(props) {
+export default function Blog(props: any) {
   return (
     <>
       <h2>The Blog</h2>
-      {props.posts.map((post, index) => {
+      {props.posts.map((post: any, index: any) => {
         return (  
           <div key={index}>
             <h3>

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-//import styles from "../../styles/post.module.css"
+import styles from "../../styles/post.module.css"
 
 export default function Post(props) {
   const router = useRouter()
@@ -11,9 +11,9 @@ export default function Post(props) {
           <small>&laquo; back to all blog posts</small>
         </Link>
       </p>
-      <h2 >{props.post.title}</h2>
+      <h2 className={styles.title}>{props.post.title}</h2>
       <p>{props.post.content}</p>
-      <button onClick={() => router.push("/blog")}>
+      <button className={styles.button} onClick={() => router.push("/blog")}>
         Click me to programmatically navigate or redirect
       </button>
     </>

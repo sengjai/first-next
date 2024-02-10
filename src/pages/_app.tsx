@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </ul>
       </nav>
     </div>
-    <Component {...pageProps} />;
+    <Component {...pageProps} />
     <p>Footer</p>
     </>
   )
