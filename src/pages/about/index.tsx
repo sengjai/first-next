@@ -9,7 +9,7 @@ export default function About(props: any) {
   }
   
   export async function getStaticProps() {
-    const response = await fetch("https://api.github.com/users/thetechyhub")
+    const response = await fetch("https://api.github.com/users/sengjai")
     const data = await response.json()
   
     return {
