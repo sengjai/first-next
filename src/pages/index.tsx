@@ -20,7 +20,7 @@ export default function Home(props: any) {
             </>
           ) : (
             <>
-              <p><b>You're not signed in, please sign in to continue</b></p>
+              <p><b>You&aposre not signed in, please sign in to continue</b></p>
               <button onClick={() => signIn()}>Sign in with SSO</button>
             </>
             
